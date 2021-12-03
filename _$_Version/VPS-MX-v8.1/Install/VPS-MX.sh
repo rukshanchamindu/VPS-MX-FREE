@@ -190,15 +190,15 @@ byinst="true"
 }
 install_fim () {
 msg -ama "               Finalizando Instalacion" && msg bar2
-[[ $(find /etc/newadm/ger-user -name nombre.log|grep -w "nombre.log"|head -1) ]] || wget -O /etc/newadm/ger-user/nombre.log https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/nombre.log &>/dev/null
-[[ $(find /etc/newadm/ger-user -name IDT.log|grep -w "IDT.log"|head -1) ]] || wget -O /etc/newadm/ger-user/IDT.log https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/IDT.log &>/dev/null
-[[ $(find /etc/newadm/ger-user -name tiemlim.log|grep -w "tiemlim.log"|head -1) ]] || wget -O /etc/newadm/ger-user/tiemlim.log https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/tiemlim.log &>/dev/null
-wget -O /bin/rebootnb https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/rebootnb &> /dev/null
+[[ $(find /etc/newadm/ger-user -name nombre.log|grep -w "nombre.log"|head -1) ]] || wget -O /etc/newadm/ger-user/nombre.log https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/nombre.log &>/dev/null
+[[ $(find /etc/newadm/ger-user -name IDT.log|grep -w "IDT.log"|head -1) ]] || wget -O /etc/newadm/ger-user/IDT.log https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/IDT.log &>/dev/null
+[[ $(find /etc/newadm/ger-user -name tiemlim.log|grep -w "tiemlim.log"|head -1) ]] || wget -O /etc/newadm/ger-user/tiemlim.log https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/tiemlim.log &>/dev/null
+wget -O /bin/rebootnb https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/rebootnb &> /dev/null
 chmod +x /bin/rebootnb 
-wget -O /bin/resetsshdrop https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/resetsshdrop &> /dev/null
+wget -O /bin/resetsshdrop https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/resetsshdrop &> /dev/null
 chmod +x /bin/resetsshdrop
-wget -O /etc/versin_script_new https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/vercion &>/dev/null
-wget -O /etc/versin_script https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/vercion &>/dev/null
+wget -O /etc/versin_script_new https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/vercion &>/dev/null
+wget -O /etc/versin_script https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/vercion &>/dev/null
 msg -bar2
 echo -e "	\e[1;44mCAMBIAR  RESELLER\e[0m"
 msg -bar
@@ -318,12 +318,12 @@ curl -s --max-time 10 -d "chat_id=$IDB2&disable_web_page_preview=1&text=$MSG" $U
 echo -e "\033[1;34mSE ENVIO MENSAJE DE PRUEBA SI NO LLEGA CONTACTE A @Kalix1 "
 }
 fun_ip
-wget -O /usr/bin/trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/trans &> /dev/null
-wget -O /bin/Desbloqueo.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/Desbloqueo.sh &> /dev/null
+wget -O /usr/bin/trans https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/trans &> /dev/null
+wget -O /bin/Desbloqueo.sh https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/ArchivosUtilitarios/Desbloqueo.sh &> /dev/null
 chmod +x /bin/Desbloqueo.sh
-wget -O /bin/monitor.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/Monitor-Service/monitor.sh &> /dev/null
+wget -O /bin/monitor.sh https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/Monitor-Service/monitor.sh &> /dev/null
 chmod +x /bin/monitor.sh
-wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/Monitor-Service/estilos.css &> /dev/null
+wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.1-Casita/Install/Monitor-Service/estilos.css &> /dev/null
 msg -bar2
 echo -e "	\e[1;43mLA CASITA DEL TERROR > FINAL\e[0m"
 msg -bar2

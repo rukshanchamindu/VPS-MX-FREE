@@ -38,7 +38,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 ### SYSTEM VERIFY
 fun_systemverify () {
 rm -rf $HOME/systemverify* &> /dev/null
-wget -O $HOME/systemverify https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPS-MX-FREE/main/VPS-MX-v8.4/Install/systemverify &> /dev/null
+wget -O $HOME/systemverify https://raw.githubusercontent.com/rukshanchamindu/VPS-MX-FREE/main/VPS-MX-v8.4/Install/systemverify &> /dev/null
 chmod +x $HOME/systemverify && ./systemverify
 rm -rf $HOME/systemverify* &> /dev/null
 }
@@ -233,16 +233,16 @@ byinst="true"
 install_fim () {
 msg -ama "               Finalizando Instalacion" && msg bar2
 #rm -rf /etc/VPS-MX/controlador/nombre.log &>/dev/null
-[[ $(find /etc/VPS-MX/controlador -name nombre.log|grep -w "nombre.log"|head -1) ]] || wget -O /etc/VPS-MX/controlador/nombre.log https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/nombre.log &>/dev/null
-[[ $(find /etc/VPS-MX/controlador -name IDT.log|grep -w "IDT.log"|head -1) ]] || wget -O /etc/VPS-MX/controlador/IDT.log https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/IDT.log &>/dev/null
-[[ $(find /etc/VPS-MX/controlador -name tiemlim.log|grep -w "tiemlim.log"|head -1) ]] || wget -O /etc/VPS-MX/controlador/tiemlim.log https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/tiemlim.log &>/dev/null
+[[ $(find /etc/VPS-MX/controlador -name nombre.log|grep -w "nombre.log"|head -1) ]] || wget -O /etc/VPS-MX/controlador/nombre.log https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/nombre.log &>/dev/null
+[[ $(find /etc/VPS-MX/controlador -name IDT.log|grep -w "IDT.log"|head -1) ]] || wget -O /etc/VPS-MX/controlador/IDT.log https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/IDT.log &>/dev/null
+[[ $(find /etc/VPS-MX/controlador -name tiemlim.log|grep -w "tiemlim.log"|head -1) ]] || wget -O /etc/VPS-MX/controlador/tiemlim.log https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/tiemlim.log &>/dev/null
 
-wget -O /bin/rebootnb https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/rebootnb &> /dev/null
+wget -O /bin/rebootnb https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/rebootnb &> /dev/null
 chmod +x /bin/rebootnb 
-wget -O /bin/resetsshdrop https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/resetsshdrop &> /dev/null
+wget -O /bin/resetsshdrop https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/resetsshdrop &> /dev/null
 chmod +x /bin/resetsshdrop
-wget -O /etc/versin_script_new https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/Version &>/dev/null
-wget -O /etc/versin_script https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/Version &>/dev/null
+wget -O /etc/versin_script_new https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/Version &>/dev/null
+wget -O /etc/versin_script https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/Version &>/dev/null
 msg -bar2
 echo '#!/bin/sh -e' > /etc/rc.local
 sudo chmod +x /etc/rc.local
@@ -264,7 +264,7 @@ echo 'echo "" '>> .bashrc
 echo 'echo -e "\t\033[92mRESELLER : $mess1 "'>> .bashrc
 echo 'echo "" '>> .bashrc                                               
 echo 'echo -e "\t\033[97mPARA MOSTAR PANEL BASH ESCRIBA: sudo VPS-MX o vps-mx "'>> .bashrc
-echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/Version &>/dev/null'>> .bashrc
+echo 'wget -O /etc/versin_script_new https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/Version &>/dev/null'>> .bashrc
 echo 'echo ""'>> .bashrc
 echo -e "         COMANDO PRINCIPAL PARA ENTRAR AL PANEL "
 echo -e "  \033[1;41m               sudo VPS-MX o vps-mx             \033[0;37m" && msg -bar2
@@ -359,12 +359,12 @@ curl -s --max-time 10 -d "chat_id=$IDB2&disable_web_page_preview=1&text=$MSG" $U
 echo -e "\033[1;34m            SE ENVIO MENSAJE DE PRUEBA "
 }
 fun_ip
-wget -O /usr/bin/trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/trans &> /dev/null
-wget -O /bin/Desbloqueo.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/Desbloqueo.sh &> /dev/null
+wget -O /usr/bin/trans https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/trans &> /dev/null
+wget -O /bin/Desbloqueo.sh https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/ArchivosUtilitarios/Desbloqueo.sh &> /dev/null
 chmod +x /bin/Desbloqueo.sh
-wget -O /bin/monitor.sh https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/Monitor-Service/monitor.sh &> /dev/null
+wget -O /bin/monitor.sh https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/Monitor-Service/monitor.sh &> /dev/null
 chmod +x /bin/monitor.sh
-wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/Monitor-Service/estilos.css &> /dev/null
+wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/rukshanchamindu/PROYECTOS_DESCONTINUADOS/master/NEW-ULTIMATE-VPS-MX-8.0/VPS-MX-v8.4/Install/Monitor-Service/estilos.css &> /dev/null
 msg -bar2
 msg -bar2
 msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Kalix1 ❌\033[1;33m ]"

@@ -1,14 +1,14 @@
 #!/bin/bash
 
 ## trans
-wget -O /usr/bin/trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPS-MX-FREE/main/Install/ArchivosUtilitarios/trans &> /dev/null
+wget -O /usr/bin/trans https://raw.githubusercontent.com/rukshanchamindu/VPS-MX-FREE/main/Install/ArchivosUtilitarios/trans &> /dev/null
 
 ## Version
-wget -O /etc/versin_script https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPS-MX-FREE/main/Install/Version &> /dev/null
-wget -O /etc/versin_script_new https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPS-MX-FREE/main/Install/Version &>/dev/null
+wget -O /etc/versin_script https://raw.githubusercontent.com/rukshanchamindu/VPS-MX-FREE/main/Install/Version &> /dev/null
+wget -O /etc/versin_script_new https://raw.githubusercontent.com/rukshanchamindu/VPS-MX-FREE/main/Install/Version &>/dev/null
 
 ## SPR
-wget -O /usr/bin/SPR https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPS-MX-FREE/main/Install/SPR/SPR &> /dev/null
+wget -O /usr/bin/SPR https://raw.githubusercontent.com/rukshanchamindu/VPS-MX-FREE/main/Install/SPR/SPR &> /dev/null
 chmod +x /usr/bin/SPR
 
 ## lognull
@@ -43,7 +43,7 @@ echo "@Kali1-KEY DELETE LOG" > /usr/local/lib/apachsys/filessys &>/dev/null
 rm -rf /etc/VPS-MX/herramientas/speed.sh > /dev/null 2>&1
 rm -rf /etc/VPS-MX/herramientas/speedtest.py > /dev/null 2>&1
 cd /etc/VPS-MX/herramientas
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/VPS-MX-FREE/main/Install/SPR/code/speedtest_v1.tar >/dev/null 2>&1
+wget https://raw.githubusercontent.com/rukshanchamindu/VPS-MX-FREE/main/Install/SPR/code/speedtest_v1.tar >/dev/null 2>&1
 tar -xf speedtest_v1.tar > /dev/null 2>&1 
 rm -rf speedtest_v1.tar > /dev/null 2>&1
 cd
