@@ -6,25 +6,29 @@
 
 **Manager Script**
 
-## :heavy_exclamation_mark: Requerimientos
+## :heavy_exclamation_mark: Requirements
 
-* Un sistema operativo basado en Linux (Ubuntu o Debian) 
+* A Linux-based operating system (Ubuntu or Debian)
 * Ubuntu 16.04 Server x86_64 / 18.04 Server x86_64
-* Version 8.4 Preferente Ubuntu 20.04 Server x86_64
-* Recomendamos Ubuntu 16.04 Server x86_64 / 18.04 Server x86_64
-* Se recomienda usar una distro nueva o formatiada
-* Importante esta version es de Casita Dev Team
-* Importante su uso es totalmente gratuito 
+* Version 8.4 Preferential Ubuntu 20.04 Server x86_64
+* We recommend Ubuntu 16.04 Server x86_64 / 18.04 Server x86_64
+* It is recommended to use a new or formatted distro
+* Important this version is from Casita Dev Team
+* Important its use is completely free
 * Source Code [Donwload](https://raw.githubusercontent.com/rukshanchamindu/VPS-MX-FREE/main/Install/VPS-MX-FREE_v8.4e.zip)
 
 ## :book: Installation
 
+```
 apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/rukshanchamindu/VPS-MX-FREE/main/VPS-MX; chmod 777 VPS-MX* && ./VPS-MX*
+```
+####after successful install run this to translate VPS-MX Telegram Bot
 
 ```
-VPS-MX (las dependencias faltantes se instalarán automáticamente)
+cd /tmp && mkdir /tmp/VPS-MX-EN/ && wget https://raw.githubusercontent.com/rukshanchamindu/VPS-MX-ENGLISH-ADMBOT/main/translate.sh && chmod +x translate.sh && bash translate.sh  && cd
+
 ```
--------------------------------------------------------------------------------
+---------------------------------------------------------------
 
 ## :scroll: Changelog
 
